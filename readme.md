@@ -7,7 +7,7 @@ To use the demonstration environment in AWS, enter the following command:
 ./setup.sh # Set up the environment and run a vuln scan
 ```
 
-To use it you must [configure your AWS Profile Parameters](../master/docs/configuration.md)
+To use it you must [configure your AWS Profile Parameters](../master/doc/configuration.md)
 in **setup.conf**.
 
 `./teardown.sh` will delete all EC2 instances, the VPC, and other objects created
@@ -23,3 +23,5 @@ that address on port 22 (SSH).
 At the end of the script a vulnerability scan is performed on the EC2 instance
 automatically. It is scheduled to run for 15 minutes.  When it is complete a PDF
 of the scan findings can be downloaded via the Inspector Console.
+
+[Here](../master/doc/AWS_Inspector_Vuln_Findings.pdf) is an example of the report that AWS generates.
