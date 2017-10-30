@@ -180,15 +180,15 @@ echo; echo "VPC termination process is complete."
 
 echo; echo "Delete the Assessment Run"
 OUTPUT=$(cat temp/assessment-run.log)
-aws inspector delete-assessment-run --assessment-run-arn $OUTPUT --profile khartman-aws1
+aws inspector delete-assessment-run --assessment-run-arn $OUTPUT
 
 echo; echo "Delete the Assessment Template"
 OUTPUT=$(cat temp/assessment-template.log)
-aws inspector delete-assessment-template --assessment-template-arn $OUTPUT --profile khartman-aws1
+aws inspector delete-assessment-template --assessment-template-arn $OUTPUT
 
 echo; echo "Delete the Assessment Target"
 OUTPUT=$(cat temp/assessment-target.log)
-aws inspector delete-assessment-target --assessment-target-arn $OUTPUT --profile khartman-aws1
+aws inspector delete-assessment-target --assessment-target-arn $OUTPUT 
 
 
 rm temp/*
