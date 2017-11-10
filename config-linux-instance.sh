@@ -12,7 +12,7 @@ TIMESTAMP=$(date)
 
 echo; echo "== Install Updates"
 #yum -y update  #<--Disabled this for POC so that any vulns are not patched at first boot
-q
+
 echo; echo "== Turn on Process Accounting"
 chkconfig psacct on
 
